@@ -53,7 +53,6 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
 
-
 @Composable
 @ExperimentalMaterialApi
 fun BottomDrawerScaffold(
@@ -231,10 +230,9 @@ private fun Scrim(
 }
 
 private fun calculateFraction(a: Float, b: Float, pos: Float): Float {
-    if(a == b) return 0f
+    if (a == b) return 0f
     return ((pos - a) / (b - a)).coerceIn(0f, 1f)
 }
-
 
 @Composable
 @ExperimentalMaterialApi

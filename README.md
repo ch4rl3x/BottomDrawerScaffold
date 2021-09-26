@@ -1,12 +1,21 @@
 # BottomDrawerScaffold
 ## Current Compose Version: 1.0.2
-Compose BottomDrawerScaffold
 
-Always visible BottomSheet as Drawer
+
+Compose BottomDrawerScaffold which implements the Material Bottom Drawer
+
+https://material.io/components/navigation-drawer#bottom-drawer
+
+
+
+The Drawer stays visible in collapsed state to show header or quick access features.
+
 Edge-To-Edge support
 
-<a href="https://github.com/ch4rl3x/RevealSwipe/actions?query=workflow%3ALint"><img src="https://github.com/ch4rl3x/BottomDrawerScaffold/workflows/Lint/badge.svg" alt="Lint"></a>
-<a href="https://github.com/ch4rl3x/RevealSwipe/actions?query=workflow%3AKtlint"><img src="https://github.com/ch4rl3x/BottomDrawerScaffold/workflows/Ktlint/badge.svg" alt="Ktlint"></a>
+
+
+<a href="https://github.com/ch4rl3x/BottomDrawerScaffold/actions?query=workflow%3ALint"><img src="https://github.com/ch4rl3x/BottomDrawerScaffold/workflows/Lint/badge.svg" alt="Lint"></a>
+<a href="https://github.com/ch4rl3x/BottomDrawerScaffold/actions?query=workflow%3AKtlint"><img src="https://github.com/ch4rl3x/BottomDrawerScaffold/workflows/Ktlint/badge.svg" alt="Ktlint"></a>
 
 <a href="https://www.codefactor.io/repository/github/ch4rl3x/BottomDrawerScaffold"><img src="https://www.codefactor.io/repository/github/ch4rl3x/BottomDrawerScaffold/badge" alt="CodeFactor" /></a>
 <a href="https://repo1.maven.org/maven2/de/charlex/compose/bottom-drawer-scaffold/"><img src="https://img.shields.io/maven-central/v/de.charlex.compose/bottom-drawer-scaffold" alt="Maven Central" /></a>
@@ -40,7 +49,8 @@ BottomDrawerScaffold(
     },
     isFloatingActionButtonDocked = true,
     floatingActionButtonPosition = FabPosition.End,
-    scaffoldState = rememberBottomDrawerScaffoldState(drawerTopInset = LocalWindowInsets.current.statusBars.top), //Add drawerTopInset for Edge-To-Edge Suppport
+    																//Add drawerTopInset for Edge-To-Edge Suppport
+    scaffoldState = rememberBottomDrawerScaffoldState(drawerTopInset = LocalWindowInsets.current.statusBars.top), 
     snackbarHost = {
         ...
     },
@@ -79,13 +89,13 @@ License
 --------
 
     Copyright 2021 Alexander Karkossa
-
+    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
+    
        http://www.apache.org/licenses/LICENSE-2.0
-
+    
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
