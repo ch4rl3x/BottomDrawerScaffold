@@ -1,5 +1,5 @@
 
-def compose_version = '1.0.2'
+def compose_version = '1.1.0-beta01'
 
 android {
     kotlinOptions {
@@ -26,4 +26,5 @@ dependencies {
     implementation "androidx.compose.ui:ui-util:$compose_version"
     implementation "androidx.compose.ui:ui-tooling:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.material3:material3:1.0.0-alpha01"
 }
