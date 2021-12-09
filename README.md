@@ -1,5 +1,5 @@
 # BottomDrawerScaffold
-## Current Compose Version: 1.0.2
+## Current Compose Version: 1.1.0-beta04
 
 
 Compose BottomDrawerScaffold which implements the Material Bottom Drawer
@@ -27,7 +27,7 @@ Add actual BottomDrawerScaffold library:
 
 ```groovy
 dependencies {
-    implementation 'de.charlex.compose:bottom-drawer-scaffold:1.0.0-rc01'
+    implementation 'de.charlex.compose:bottom-drawer-scaffold:1.1.0-beta02'
 }
 ```
 
