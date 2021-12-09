@@ -377,7 +377,7 @@ internal fun BottomDrawerScaffoldStack(
     ) { measurables, constraints ->
         val placeable = measurables.first().measure(constraints)
 
-        //FIXME Workaround for https://issuetracker.google.com/issues/208855077
+        // FIXME Workaround for https://issuetracker.google.com/issues/208855077
         val (drawerPlaceable, snackbarPlaceable) =
             measurables.drop(1).map {
                 it.measure(constraints.copy(minWidth = 0, minHeight = 0))
